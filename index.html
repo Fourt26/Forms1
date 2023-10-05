@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="form container-fluid border m-1 d-flex justify-content-center">
+        <form>
+            <fieldset>
+                <legend>Payment form example</legend>
+                <div class="row missingFiles-row m-2 p-2 shadow-sm">
+                    <div class="rounded border-danger bg-danger">Some fields are missing</div>
+                </div>
+                <div class="row PaymentInfo m-2 p-2 shadow-sm">
+                    <div class="col">
+                        <label for="Card-number">Card#</label>
+                        <input type="text" placeholder="xxxxxxxxxxxxxxxx" aria-label="Card-number" id="Card-number">
+                    </div>
+                    <div class="col">
+                        <label for="CVC">CVC #</label>
+                        <input type="text" placeholder="000" aria-label="CVC" id="CVC">
+                    </div>
+                    <div class="col">
+                        <label for="Amount">Amount</label>
+                        <div class="input-group">
+                            <spanc class="m-1" id="dollar-sign">$</span>
+                            <input type="text" id="Amount" placeholder="Amount" aria-describedby="dollar-sign">    
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2 p-2 shadow-sm d-flex space-evenly">
+                    <div class="col">
+                        <label for="FirstName">First Name</label> <br>
+                        <input type="text" id="FirstName"> <br>
+                    </div>
+                    <div class="col">
+                        <label for="LastName">Last Name</label> <br>
+                        <input type="text" id="LastName">
+                    </div>
+                </div>
+                <div class="row m-2 p-2 shadow-sm d-flex align-content-center">
+                    <div class="col-6">
+                        <label for="City">City</label> <br>
+                        <input type="text" id="City"> <br>
+                    </div>
+                    <div class="col-3">
+                        <label for="State">State</label>
+                        <select name="Pick a state" id="State">
+                            <option value="Washington">Washington DC</option>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Missouri"> Missouri</option>
+                            <option value="Florida">FLorida</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="Postal-code">Postal code</label>
+                        <input type="text" id="Postal-code">
+                    </div>
+                </div>
+                <div class="row shadow-sm m-2">
+                    <div class="col">
+                        <div>We accept:</div>
+                        <label for="Visa"><i class="fa-brands fa-cc-visa"></i></label>
+                        <input type="checkbox" name="Visa" id="Visa">
+                        <label for="MasterCard"><i class="fa-brands fa-cc-mastercard"></i></label>
+                        <input type="checkbox" name="Mastercard" id="MasterCard">
+                        <label for="Paypal"><i class="fa-brands fa-cc-paypal"></i></label>
+                        <input type="checkbox" name="Paypal" id="Paypal">
+                        <label for="MercadoPago">Mercado pago</label>
+                        <input type="checkbox" name="Mercado Pago" id="MercadoPago">
+                    </div>
+                    <div class="col">
+                        <label for="Message">Message</label><br>
+                        <input type="text" id="Message" placeholder="Add any notes here" class="input-lg" style="height: 100px; width: 400px;">
+                    </div>
+                </div>
+                <div class="form-feet">
+                    <div class="row m-2 shadow-sm">
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-secondary m-1">Cancel</button>
+                            <button type="button" class="btn btn-primary m-1">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e11700e415.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
